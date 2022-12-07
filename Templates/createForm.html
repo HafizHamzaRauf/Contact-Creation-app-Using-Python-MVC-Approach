@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    rel="stylesheet"
+    href="{{ url_for('static', filename='css/main.css') }}"
+  />
+  <link
+    rel="stylesheet"
+    href="{{ url_for('static', filename='css/createForm.css') }}"
+  />
+  <link
+    rel="stylesheet"
+    href="{{ url_for('static', filename='css/nav.css') }}"
+  />
+  
+  
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+        <a href="/createForm">Create Contact</a>
+        <a href="/contacts">View Contacts </a>
+        <a href="/searchForm"> Search Contact By Name</a>
+        <a href="/">main </a>
+      </nav>
+<hr>
+    <h1>{{msg}}</h1>
+    <form action="/create" method="post">
+        <div>
+      <label> Enter name:</lable>
+      <input type="text" name="name">
+      </div>
+      <div>
+
+      <label> Enter mobile Number:</lable>
+      <input type="text" name="mobile_no">
+      </div>
+      <div>
+      <label> Enter  city :</lable>
+      <input type="text" name="city">
+      </div>
+      <div> 
+      <label> Enter Profession :</lable>
+      <input type="text" name="profession">
+      </div>         
+      <input type="submit" value = "create" class = "button">   
+
+    </form>
+  </body>
+</html>

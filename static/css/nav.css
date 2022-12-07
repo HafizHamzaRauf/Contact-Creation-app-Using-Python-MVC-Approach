@@ -1,0 +1,9 @@
+nav {
+  flex-direction: row;
+  padding: 1rem;
+  max-width: 100%;
+}
+a {
+  padding: 0.5rem;
+  font-size: 1rem;
+}

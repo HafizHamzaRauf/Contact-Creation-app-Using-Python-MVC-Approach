@@ -1,0 +1,12 @@
+.table {
+  margin: 0 auto;
+  max-width: 40rem;
+}
+th {
+  color: rgb(86, 137, 212);
+}
+
+td {
+  border: none;
+  text-align: center;
+}
